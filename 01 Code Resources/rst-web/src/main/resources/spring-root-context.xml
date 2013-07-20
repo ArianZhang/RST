@@ -17,7 +17,11 @@
 
 	<bean
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+<<<<<<< Upstream, based on branch 'master' of https://github.com/AZGLXX/RST.git
 		<property name="location" value="classpath:application.properties" />
+=======
+		<property name="location" value="application.properties" />
+>>>>>>> efce379 add properties
 		<property name="ignoreResourceNotFound" value="true" />
 		<property name="ignoreUnresolvablePlaceholders" value="true" />
 	</bean>
