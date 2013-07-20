@@ -10,6 +10,16 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd">
 
 	<context:annotation-config />
+
 	<context:component-scan base-package="com.azglxx.rst" />
+
 	<aop:aspectj-autoproxy proxy-target-class="true" />
+
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:application.properties" />
+		<property name="ignoreResourceNotFound" value="true" />
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+	</bean>
+
 </beans>
